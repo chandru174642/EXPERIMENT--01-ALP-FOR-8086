@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+Name :CHANDRU.P
+Reg No:212223110007
+Date of experiment :21/08/24
 
 
 
@@ -78,24 +78,120 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
+```
+org 100h
 
+mov Al,11H;
+mov Bl,20H;
+add al,bl;
+mov [6379H],al;
+ret;
+```
 
 
 ## Output  
+![Screenshot 2024-08-20 133034](https://github.com/user-attachments/assets/48b4ffbc-da4b-4032-adb6-826cdaa081f9)
+
  
 ## Subtraction   of 8 bit numbers  ALP 
+```
+org 100h
+
+mov Al,11H;
+mov Bl,20H;
+sub Al,Bl;
+mov [6379H],al;
+ret;
+```
+
  
-## Output  
+## Output 
+![Screenshot 2024-08-20 133751](https://github.com/user-attachments/assets/0e5f6606-9702-47ea-bf4b-746d25d21053)
+
 ## Multiplication alp 
+```
+org 100h
+MOV al,13h;
+MOV bl,2h;
+MUL bl;
+MOV [6063h],bl;
+
+ret
+
+```
  ## Output  
+![Screenshot 2024-08-20 134545](https://github.com/user-attachments/assets/d07967a7-1d13-4ce9-8a89-8ac122032339)
 
 
 ## Division alp 
+```
+org 100h
+
+MOV al,26h;
+MOV bl,[2369h];
+DIV bl;
+MOV [2399h],al;
+ret
+```
 
 ## Output  
+![Screenshot 2024-08-20 140949](https://github.com/user-attachments/assets/4db59b9d-7ec8-4eed-8e02-4b1735a9b666)
+
+## OR operation
+```
+org 100H
+MOV SI,0532H;
+MOV AX,0A32H;
+MOV BX,0B13H;
+OR AX,BX;
+ret
+```
+
+##output
+![Screenshot 2024-08-20 134959](https://github.com/user-attachments/assets/b679b3f2-28c8-420d-9be2-aa1f615589c7)
+
+##AND operation
+
+```
+org 100H
+MOV [SI],AX;
+MOV AX,0A32H;
+MOV BX,0B13H;
+AND AX,BX;
+ret
+```
+##OUTPUT
+![Screenshot 2024-08-20 135408](https://github.com/user-attachments/assets/be6b414c-14e9-48d5-b6eb-b6d8ba7c9163)
 
 
-## Result :
+#XOR operation
+```
+org 100H
+MOV [SI+2],AX;
+MOV AX,0A32H;
+MOV BX,0B13H;
+XOR AX,BX;
+ret
+```
+
+##OUTPUT:
+
+![Screenshot 2024-08-20 135528](https://github.com/user-attachments/assets/befacca9-6c46-48ab-954c-a4fca11eb591)
+
+#NOT operation
+```
+org 100H
+MOV [SI+4],AX;
+MOV AX,0A32H;
+NOT AX;
+MOV [SI+6],AX;
+ret
+```
+##OUTPUT
+![Screenshot 2024-08-20 140150](https://github.com/user-attachments/assets/50286c24-d62a-4c90-9227-08bb999a0ee6)
+
+
+## Result :Thus, ALP for fundamental arithmetic and logical operations are executed successfully.
  
 
 
